@@ -1,0 +1,20 @@
+:root{
+    --oxford-blue: #002856ff;
+--blue-yonder: #5e769dff;
+--beau-blue: #d5e0ecff;
+--bdazzled-blue: #28588fff;
+}
+
+body{
+    background-color: var(--oxford-blue);
+    color: var(--beau-blue);
+}
+
+.form_box{
+    background-color: var(--bdazzled-blue);
+}
+
+.btn{
+    background-color: var(--blue-yonder);
+    color: var(--beau-blue);
+}

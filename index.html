@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="d-flex justify-content-center p-4">
+    <div class="main d-flex flex-column justify-content-center my-4">
+        <h1 class="main_title d-flex  justify-content-center">freeCodeCamp Survey Form</h1>
+<p class="main_description d-flex  justify-content-center">Thank you for taking the time to help us improve the platform</p>
+
+
+  <form class="survey_form d-flex flex-column justify-content-center" action="" >
+    <div class=" form_box  rounded-3 d-flex flex-column justify-content-center p-5">
+    <label for="name" id="name-label" class="form-label ">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required>
+  <br>
+    <label for="email" id="email-label" class="form-label ">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+  <br>
+    <label for="number" id="number-label" class="form-label ">Age</label>
+    <input type="number" name="number" id="number" min="1" max="120" class="form-control" placeholder="Enter your age">
+  <br>
+    <select name="role" id="dropdown" class="form-select" aria-label="Default select example">
+      <option selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="other">Other</option>
+    </select>
+  <br>
+    <p class="form_question-radio ">Do you like this platform ?</p>
+    <label for="maybe" class="form-check-label "><input type="radio" name="user" class="form-check-input" id="maybe" value="maybe">Maybe</label>
+    <label for="notsure" class="form-check-label "><input type="radio" name="user" class="form-check-input" id="notsure" value="notsure">Not sure</label>
+    <br>
+    <p class="form_question-check ">What kind of programmer are you ?</p>
+    <label for="frontend" class="form-check-label "><input type="checkbox" name="prefer" class="form-check-input" id="frontend" value="frontend">Front end</label>
+    <label for="backend" class="form-check-label "><input type="checkbox" name="prefer" class="form-check-input" id="backend" value="backend">Back end</label>
+  <br>
+  <p class="form_question-textarea ">What do you think about this platform ?</p>
+    <textarea name="form_comments" id="" cols="30" rows="10" class="form-control"></textarea>
+  </div>
+  <br>
+    <button type="submit" class="btn" id="submit">Submit</button>
+  </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
